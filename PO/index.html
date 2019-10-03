@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>PO Request</title>
+    <link rel="stylesheet" href="Content\style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>PO Request</h1>
+<table>
+	<tr>
+		<th valign="top" width="200">
+			<img src="Content\ot.jpg" height="200" width="200">
+			<img src="Content\rt.jpg" height="200" width="200">
+		</th>
+		<th>
+			<div class="pc-tab">
+				<input checked="checked" id="tab1" type="radio" name="pct" />
+				<input id="tab2" type="radio" name="pct" />
+				<input id="tab3" type="radio" name="pct" />
+				<input id="tab4" type="radio" name="pct" />
+				<input id="tab5" type="radio" name="pct" />
+				<nav>
+					<ul>
+						<li class="tab1">
+						<label for="tab1">Draft</label>
+						</li>
+						<li class="tab2">
+						<label for="tab2">For Approve</label>
+						</li>
+						<li class="tab3">
+						<label for="tab3">Approve</label>
+						</li>
+						<li class="tab4">
+						<label for="tab4">Query</label>
+						</li>
+						</li>
+						<li class="tab5">
+						<label for="tab5">Item Code</label>
+						</li>
+					</ul>
+				</nav>
+				<section>
+					<div class="tab1">    
+						<h4 align="left"><a target="Draft" href="DraftPO.html">Draft</a></h4>
+						<iframe name="Draft" width="560" height="680" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" >
+						</iframe>
+					</div>
+						<div class="tab2">
+						<h4 align="left"><a target="Que" href="ForApprove.html">For Approve</a></h4>
+						<iframe name="Que" width="560" height="740" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" >
+						</iframe>
+					</div>
+					<div class="tab3">
+						<h4 align="left"><a target="Query" href="ApprovePO.html">Approve</a></h4>
+						<iframe name="Query" width="560" height="600" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" >
+						</iframe>
+					</div>
+					<div class="tab4">
+						<h4 align="left"><a target="QueryPO" href="QueryPO.html">Query</a></h4>
+						<iframe name="QueryPO" width="560" height="740" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" >
+						</iframe>
+					</div>
+					<div class="tab5">
+						<h4 align="left"><a target="IC" href="ItemCode.html">Item Code</a></h4>
+						<iframe name="IC" width="700" height="695" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" >
+						</iframe>
+					</div>
+				</section>
+			</div>
+		</th>
+	</tr>
+</table>		
+</body>
+</html>
