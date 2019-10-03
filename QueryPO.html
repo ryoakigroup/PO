@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Query PO</title>
+
+</head>
+
+<body>
+    <div class="tab2">
+        <table cellpadding="0">
+            <tr>
+                <th>
+                    <div>
+                        <iframe src="Query.html" width="600" height="23" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">
+                        </iframe>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div>
+                        <iframe id="zel" src="https://docs.google.com/spreadsheets/d/1xGaX6h5-QPCzwQwxIz_jAEixde0Y9JNKBS42V3lmw3Y/htmlembed/sheet?gid=1019796294&range=A1:G32" width="600" height="680" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">
+                        </iframe>
+					</div>   
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="myFunction()">Print P.O.</button>
+                    <script>
+                        function myFunction() {
+  window.print();
+}
+						window.setInterval("reloadIFrame();", 3000);
+
+                        function reloadIFrame() {
+                            var frameHolder = document.getElementById('zel');
+                            frameHolder.src = "https://docs.google.com/spreadsheets/d/1xGaX6h5-QPCzwQwxIz_jAEixde0Y9JNKBS42V3lmw3Y/htmlembed/sheet?gid=1019796294&range=A1:G32"
+                        }
+                    </script>
+                </th>
+            </tr>    
+        </table>
+
+    </div>
+</body>
+</html>
